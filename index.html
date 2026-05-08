@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVER - Ride Smarter</title>
+    
+    <!-- External Dependencies -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TRIVER</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary">Login</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Ride smarter with TRIVER</h1>
+                <p class="hero-subtext">Premium mobility for your daily commute and beyond.</p>
+                
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="pickup">Pickup Location</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" id="pickup" placeholder="Enter pickup address">
+                        </div>
+                        <span class="error-message" id="pickupError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-map-pin"></i>
+                            <input type="text" id="destination" placeholder="Enter destination">
+                        </div>
+                        <span class="error-message" id="destinationError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dateTime">Date & Time</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-calendar-alt"></i>
+                            <input type="datetime-local" id="dateTime">
+                        </div>
+                        <span class="error-message" id="dateTimeError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-book" id="bookButton">
+                        <span class="button-text">Book Ride</span>
+                        <div class="spinner" id="bookSpinner"></div>
+                    </button>
+                </form>
+            </div>
+
+            <div class="hero-image" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Modern black car" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up">Why Choose TRIVER</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Booking</h3>
+                    <p>Book your ride in under 60 seconds with our streamlined process.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Affordable Prices</h3>
+                    <p>Competitive rates with no hidden fees, ever.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Safe Drivers</h3>
+                    <p>All drivers are background-checked and fully licensed.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>24/7 Availability</h3>
+                    <p>Ride anytime, day or night, rain or shine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ride Categories -->
+    <section class="ride-categories" id="categories">
+        <div class="section-container">
+            <h2 class="section-title" data-aos="fade-up">Our Ride Options</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="TRIVER Go" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>TRIVER Go</h3>
+                        <p>Affordable daily rides for your commute.</p>
+                        <button class="btn btn-secondary btn-price">Estimate Price</button>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1560950451-ccd3a4d1e5b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="TRIVER Premium" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>TRIVER Premium</h3>
+                        <p>Luxury rides with top-rated drivers.</p>
+                        <button class="btn btn-secondary btn-price">Estimate Price</button>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="TRIVER Bike" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>TRIVER Bike</h3>
+                        <p>Quick rides through traffic congestion.</p>
+                        <button class="btn btn-secondary btn-price">Estimate Price</button>
+                    </div>
+                </div>
+                <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1545173168-9f1947eebb7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="TRIVER XL" loading="lazy">
+                    </div>
+                    <div class="category-content">
+                        <h3>TRIVER XL</h3>
+                        <p>Spacious rides for groups and luggage.</p>
+                        <button class="btn btn-secondary btn-price">Estimate Price</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Promotion -->
+    <section class="app-promo">
+        <div class="section-container">
+            <div class="app-container">
+                <div class="app-left" data-aos="fade-right">
+                    <h2>Get the TRIVER App</h2>
+                    <p>Book rides, track drivers, and manage payments on the go.</p>
+                    <div class="qr-container">
+                        <div class="qr-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                            <span>Scan to Download</span>
+                        </div>
+                        <div class="download-buttons">
+                            <button class="btn btn-primary"><i class="fab fa-app-store-ios"></i> App Store</button>
+                            <button class="btn btn-primary"><i class="fab fa-google-play"></i> Google Play</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-right" data-aos="fade-left">
+                    <div class="app-screenshots">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="App Screenshot" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="App Screenshot" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="App Screenshot" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-logo">TRIVER</h4>
+                    <p>Premium mobility solutions for modern life.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Report an Issue</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TRIVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
