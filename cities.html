@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVER India - Cities We Serve</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TRIVER India</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="cities.html" class="nav-link active">Cities</a>
+                <a href="drivers.html" class="nav-link">Drive With Us</a>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary">Login</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Cities Hero -->
+    <section class="services-hero" style="background-image: url('https://images.unsplash.com/photo-1514222137406-5a5d5d5b5b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')">
+        <div class="hero-overlay"></div>
+        <div class="section-container">
+            <h1 class="services-hero-title" data-aos="fade-up">Indian Cities We Serve</h1>
+            <p class="services-hero-subtext" data-aos="fade-up" data-aos-delay="100">10+ cities across India, expanding every month.</p>
+        </div>
+    </section>
+
+    <!-- City Filter -->
+    <section class="section-container" style="padding: 80px 24px;">
+        <div class="city-filter" data-aos="fade-up">
+            <input type="text" id="cityFilter" placeholder="Search Indian cities (e.g., Delhi, Mumbai)">
+        </div>
+
+        <!-- Cities Grid -->
+        <div class="cities-grid">
+            <div class="city-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="city-image">
+                    <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="New Delhi" loading="lazy">
+                </div>
+                <div class="city-content">
+                    <h3>New Delhi</h3>
+                    <p>Serving Connaught Place, Dwarka, Noida. 24/7 rides available.</p>
+                    <p><i class="fas fa-phone"></i> +91 11 1234 5678</p>
+                </div>
+            </div>
+            <div class="city-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="city-image">
+                    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Mumbai" loading="lazy">
+                </div>
+                <div class="city-content">
+                    <h3>Mumbai</h3>
+                    <p>Serving Marine Drive, Bandra, Andheri. Local train alternative rides.</p>
+                    <p><i class="fas fa-phone"></i> +91 22 1234 5678</p>
+                </div>
+            </div>
+            <div class="city-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="city-image">
+                    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bangalore" loading="lazy">
+                </div>
+                <div class="city-content">
+                    <h3>Bangalore</h3>
+                    <p>Serving Electronic City, Whitefield, Indiranagar. IT commute specialist.</p>
+                    <p><i class="fas fa-phone"></i> +91 80 1234 5678</p>
+                </div>
+            </div>
+            <div class="city-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="city-image">
+                    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Hyderabad" loading="lazy">
+                </div>
+                <div class="city-content">
+                    <h3>Hyderabad</h3>
+                    <p>Serving Hitech City, Gachibowli, Banjara Hills. Biryani delivery rides available.</p>
+                    <p><i class="fas fa-phone"></i> +91 40 1234 5678</p>
+                </div>
+            </div>
+            <div class="city-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="city-image">
+                    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Chennai" loading="lazy">
+                </div>
+                <div class="city-content">
+                    <h3>Chennai</h3>
+                    <p>Serving T Nagar, OMR, Marina Beach. Temple visit special packages.</p>
+                    <p><i class="fas fa-phone"></i> +91 44 1234 5678</p>
+                </div>
+            </div>
+            <div class="city-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="city-image">
+                    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Kolkata" loading="lazy">
+                </div>
+                <div class="city-content">
+                    <h3>Kolkata</h3>
+                    <p>Serving Park Street, Salt Lake, Howrah. Durga Puja special rides.</p>
+                    <p><i class="fas fa-phone"></i> +91 33 1234 5678</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-logo">TRIVER India</h4>
+                    <p>Premium mobility solutions for modern India.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="help.html">Help Center</a></li>
+                        <li><a href="safety.html">Safety</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TRIVER India. All rights reserved. GSTIN: 29XXXXX1234X1Z5</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
